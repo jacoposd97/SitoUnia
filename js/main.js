@@ -12,6 +12,10 @@
   const toggles = document.querySelectorAll('[data-theme-toggle]');
   const labels = document.querySelectorAll('[data-theme-label]');
 
+    // Hamburger menu functionality
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
   function readSavedTheme() {
     try {
       return window.localStorage.getItem('unia-games-theme');
@@ -52,12 +56,20 @@
   }
 
     toggles.forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const isLight = document.body.classList.contains('light-theme');
+    toggle.addEventListener('click', () => {
 
-        setTheme(isLight ? 'dark' : 'light');
-      });
+      const isLight = document.body.classList.contains('light-theme');
+
+      setTheme(isLight ? 'dark' : 'light');
+
+      // Close mobile menu after theme change
+      if (hamburgerMenu && mobileMenu) {
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        mobileMenu.classList.remove('open');
+      }
     });
+  });
 
   const languageSwitchers = document.querySelectorAll('.language-switcher');
 
@@ -75,9 +87,7 @@
     }
   });
 
-  // Hamburger menu functionality
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const mobileMenu = document.querySelector('.mobile-menu');
+
 
   if (hamburgerMenu && mobileMenu) {
     hamburgerMenu.addEventListener('click', () => {

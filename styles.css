@@ -557,6 +557,22 @@ body.light-theme .social-list li {
   overflow-wrap: anywhere;
 }
 
+.card p,
+.contact-card p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.5;
+
+  overflow-wrap: break-word;
+}
+
+.card h3,
+.contact-card h3 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  line-height: 1.2;
+
+  overflow-wrap: break-word;
+}
+
 .social-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -627,8 +643,8 @@ body.light-theme .site-footer {
   border: 0 !important;
 }
 
-/* Mobile layout: show hamburger menu    quello bello */
-@media (max-width: 90rem) {
+ 
+@media (max-width: 90rem) {    /* Mobile layout: show hamburger menu    quello bello */
 
   .hamburger-menu {
     display: flex;
@@ -715,146 +731,8 @@ body.light-theme .mobile-menu {
   }
 }
 
-/* Phone layout: iPhone and Android */
-@media (max-width: 48rem) {
-  :root {
-    --page-padding: 1rem;
-    --radius: 0.875rem;
-    --shadow: none;
-  }
 
-  body {
-    background-image:
-      linear-gradient(135deg, #080812 0%, #111125 48%, #080812 100%);
-  }
 
-  .site-header {
-    backdrop-filter: none;
-  }
-
-  .header-inner {
-    gap: 0.85rem;
-  }
-
-  .brand {
-    font-size: 1rem;
-  }
-
-  .brand-logo {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-
-  .header-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-
-  .nav-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-    gap: 0.5rem;
-  }
-
-  .nav-list a,
-  .theme-toggle,
-  .language-switcher summary {
-    width: 100%;
-    justify-content: center;
-    border: 1px solid var(--border);
-    border-radius: 0.875rem;
-  }
-
-  .language-switcher {
-    width: 100%;
-  }
-
-  .language-menu {
-    position: static;
-    width: 100%;
-    margin-top: 0.5rem;
-    box-shadow: none;
-  }
-
-  .hero {
-    padding-block: 3rem;
-  }
-
-  h1 {
-    font-size: clamp(3rem, 18vw, 4.8rem);
-  }
-
-  h2 {
-    font-size: clamp(2rem, 11vw, 3rem);
-  }
-
-  .claim {
-    font-size: 1.2rem;
-  }
-
-  .hero-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .button,
-  .button-secondary {
-    width: 100%;
-    border-radius: 0.875rem;
-  }
-
-  .placeholder,
-  .content-note,
-  .card,
-  .contact-card,
-  .social-list li {
-    padding: 1rem;
-  }
-
-  .social-list {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-inner {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet layout */
-@media (max-width: 64rem) {
-  .header-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .social-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Very small phones */
-@media (max-width: 22rem) {
-  .nav-list {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: clamp(2.6rem, 17vw, 3.6rem);
-  }
-}
 
 /* Social links styling */
 .social-links {
