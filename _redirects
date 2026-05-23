@@ -1,0 +1,11 @@
+# Cloudflare Pages — canonical redirects for uniagames.com
+
+# Trailing slash for /it
+/it  /it/  301
+
+# Redirect old index-it.html URL to clean /it/
+/it/index-it.html  /it/  301
+
+# Accessibility statement clean URLs
+/accessibility/index.html  /accessibility/  301
+/it/accessibility/index.html  /it/accessibility/  301
