@@ -2,7 +2,10 @@
 
 python3 -m http.server 8000
 
-ctrl+F5 per refreshare le cache del borwser
+ctrl+F5 ; per refreshare le cache del borwser
+
+shift + alt + F ; per fare auto alling
+
 
 Bilingual, accessible and responsive starter landing page for Unia Games.
 
