@@ -98,7 +98,7 @@ body.light-theme {
   --focus: #ffffff;
 
   background-color: #FEFDF1;
-  background-image: 
+  background-image:
     radial-gradient(circle at top left,
       rgba(28, 122, 28, 0.253),
       transparent 22rem),
@@ -512,7 +512,7 @@ body.light-theme .section+.section {
 .social-list li {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius);
- /* background: var(--surface); /*  */ 
+  /* background: var(--surface); /*  */
   background: #7c0d0d94;
   box-shadow: var(--shadow);
 }
@@ -543,6 +543,44 @@ body.light-theme .social-list li {
 .card p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.card b {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.contact-card b {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.card b,
+.contact-card b {
+  font-size: clamp(1.2rem, 3vw, 1.3rem);
+  line-height: 1.0;
+
+  overflow-wrap: break-word;
+}
+
+.card c {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.contact-card c {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.card c,
+.contact-card c {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  line-height: 1.0;
+  font-family: "Leggibilmente", sans-serif;
+  font-weight: 400;
+
+  overflow-wrap: break-word;
 }
 
 .contact-grid {
@@ -743,7 +781,9 @@ body.light-theme .site-footer {
   }
 }
 
-@media (max-width: 768px) {    /* Mobile layout: card sovrapposte */
+@media (max-width: 768px) {
+
+  /* Mobile layout: card sovrapposte */
   .grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -810,3 +850,11 @@ body.light-theme .social-button:hover {
     font-size: 1.25rem;
   }
 }
+
+/* default: tema scuro */
+.logo-dark  { display: none; }
+.logo-light { display: block; }
+
+/* tema chiaro */
+body.light-theme .logo-dark  { display: block; }
+body.light-theme .logo-light { display: none; }
