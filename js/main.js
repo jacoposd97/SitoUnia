@@ -3,6 +3,17 @@
   Minimal JavaScript for progressive enhancement only.
 */
 
+/*
+import { LINKS } from "./links.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#instagram-link").href = LINKS.instagram;
+  document.querySelector("#facebook-link").href = LINKS.facebook;
+  document.querySelector("#discord-link").href = LINKS.discord;
+  document.querySelector("#linkedin-link").href = LINKS.linkedin;
+});
+*/
+
 (function () {
   const yearElement = document.querySelector('[data-current-year]');
   if (yearElement) {

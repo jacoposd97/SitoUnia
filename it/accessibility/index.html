@@ -65,7 +65,7 @@
                     </button>
                 </div>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -74,8 +74,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
-                        title="Facebook">
+
+                    <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button" title="Facebook">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -83,7 +83,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Join us on Discord" class="social-button" href="https://discord.com" title="Discord">
+
+                    <a data-social="discord" aria-label="Join us on Discord" class="social-button" title="Discord">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -91,8 +92,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
-                        title="LinkedIn">
+
+                    <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button" title="LinkedIn">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -131,7 +132,7 @@
                         chiaro</span>
                 </button>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -140,8 +141,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
-                        title="Facebook">
+
+                    <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button" title="Facebook">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -149,7 +150,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Join us on Discord" class="social-button" href="https://discord.com" title="Discord">
+
+                    <a data-social="discord" aria-label="Join us on Discord" class="social-button" title="Discord">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -157,8 +159,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
-                        title="LinkedIn">
+
+                    <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button" title="LinkedIn">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -213,10 +215,20 @@
                 i diritti riservati.</p>
             <div class="footer-links">
                 <a href="../index-it.html">Home</a>
+                <a href="privacy-it.html">Privacy</a>
                 <a href="../../accessibility/index.html" hreflang="en" lang="en">English</a>
             </div>
         </div>
     </footer>
+
+    <script src="../../js/links.js"></script>
+    <script>
+        document.querySelectorAll('[data-social="instagram"]').forEach(el => el.href = SOCIAL_LINKS.instagram);
+        document.querySelectorAll('[data-social="facebook"]').forEach(el => el.href = SOCIAL_LINKS.facebook);
+        document.querySelectorAll('[data-social="discord"]').forEach(el => el.href = SOCIAL_LINKS.discord);
+        document.querySelectorAll('[data-social="linkedin"]').forEach(el => el.href = SOCIAL_LINKS.linkedin);
+    </script>
+
 </body>
 
 </html>

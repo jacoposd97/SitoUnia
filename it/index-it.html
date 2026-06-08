@@ -82,7 +82,7 @@
                               </button>
                         </div>
                         <div aria-label="Social media" class="social-links">
-                              <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                              <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                                     title="Instagram">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +91,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
+
+                              <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button"
                                     title="Facebook">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +101,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Join us on Discord" class="social-button" href="https://discord.com"
+
+                              <a data-social="discord" aria-label="Join us on Discord" class="social-button"
                                     title="Discord">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +111,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
+
+                              <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button"
                                     title="LinkedIn">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +152,7 @@
                                     chiaro</span>
                         </button>
                         <div aria-label="Social media" class="social-links">
-                              <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                              <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                                     title="Instagram">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +161,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
+
+                              <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button"
                                     title="Facebook">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +171,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Join us on Discord" class="social-button" href="https://discord.com"
+
+                              <a data-social="discord" aria-label="Join us on Discord" class="social-button"
                                     title="Discord">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +181,8 @@
                                           </path>
                                     </svg>
                               </a>
-                              <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
+
+                              <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button"
                                     title="LinkedIn">
                                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                                           xmlns="http://www.w3.org/2000/svg">
@@ -252,12 +258,22 @@
                               Games. Tutti i diritti riservati.</p>
                         <nav aria-label="Navigazione footer" class="footer-links">
                               <a href="accessibility/index.html">Statuto di accessibilità</a>
-                              <a href="privacy-it.html">Privacy-it</a>
+                              <a href="privacy-it.html">Privacy</a>
                               <a href="../index.html" hreflang="it" lang="it">Inglese</a>
                         </nav>
                   </div>
             </div>
       </footer>
+
+      <script src="../js/links.js"></script>
+      <script>
+            document.querySelectorAll('[data-social="instagram"]').forEach(el => el.href = SOCIAL_LINKS.instagram);
+            document.querySelectorAll('[data-social="facebook"]').forEach(el => el.href = SOCIAL_LINKS.facebook);
+            document.querySelectorAll('[data-social="discord"]').forEach(el => el.href = SOCIAL_LINKS.discord);
+            document.querySelectorAll('[data-social="linkedin"]').forEach(el => el.href = SOCIAL_LINKS.linkedin);
+      </script>
+
+
 </body>
 
 </html>

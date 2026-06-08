@@ -84,7 +84,7 @@
                     </button>
                 </div>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a aria-label="Follow us on Instagram" class="social-button" href="https://www.instagram.com/uniagames/"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@
                         theme</span>
                 </button>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a aria-label="Follow us on Instagram" class="social-button" href="https://www.instagram.com/uniagames/"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -224,11 +224,21 @@
                     All rights reserved.</p>
                 <nav aria-label="Footer navigation" class="footer-links">
                     <a href="accessibility/index.html">Accessibility Statement</a>
+                    <a href="privacy.html">Privacy</a>
                     <a href="it/index-it.html" hreflang="it" lang="it">Italiano</a>
                 </nav>
             </div>
         </div>
     </footer>
+
+    <script src="/js/links.js"></script>
+<script>
+  document.querySelectorAll('[data-social="instagram"]').forEach(el => el.href = SOCIAL_LINKS.instagram);
+  document.querySelectorAll('[data-social="facebook"]').forEach(el => el.href = SOCIAL_LINKS.facebook);
+  document.querySelectorAll('[data-social="discord"]').forEach(el => el.href = SOCIAL_LINKS.discord);
+  document.querySelectorAll('[data-social="linkedin"]').forEach(el => el.href = SOCIAL_LINKS.linkedin);
+</script>
+
 </body>
 
 </html>

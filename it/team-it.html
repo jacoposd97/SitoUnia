@@ -57,7 +57,7 @@
                         <li><a href="project-it.html">Progetto</a></li>
                         <li><a href="accessibility-it.html">Accessibilità</a></li>
                         <li><a href="team-it.html">Team</a></li>
-                        <li><a href="contact-it.html">Contatto</a></li>
+                        <li><a href="contact-it.html">Contatti</a></li>
                     </ul>
                 </nav>
             </div>
@@ -83,7 +83,7 @@
                     </button>
                 </div>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +92,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
-                        title="Facebook">
+
+                    <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button" title="Facebook">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -101,7 +101,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Join us on Discord" class="social-button" href="https://discord.com" title="Discord">
+
+                    <a data-social="discord" aria-label="Join us on Discord" class="social-button" title="Discord">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -109,8 +110,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
-                        title="LinkedIn">
+
+                    <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button" title="LinkedIn">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -127,7 +128,7 @@
                 <li><a href="project-it.html">Progetto</a></li>
                 <li><a href="accessibility-it.html">Accessibilità</a></li>
                 <li><a href="team-it.html">Team</a></li>
-                <li><a href="contact-it.html">Contatto</a></li>
+                <li><a href="contact-it.html">Contatti</a></li>
             </ul>
             <div class="mobile-menu-bottom">
                 <details class="language-switcher">
@@ -149,7 +150,7 @@
                         chiaro</span>
                 </button>
                 <div aria-label="Social media" class="social-links">
-                    <a aria-label="Follow us on Instagram" class="social-button" href="https://instagram.com"
+                    <a data-social="instagram" aria-label="Follow us on Instagram" class="social-button"
                         title="Instagram">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -158,8 +159,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on Facebook" class="social-button" href="https://facebook.com"
-                        title="Facebook">
+
+                    <a data-social="facebook" aria-label="Follow us on Facebook" class="social-button" title="Facebook">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -167,7 +168,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Join us on Discord" class="social-button" href="https://discord.com" title="Discord">
+
+                    <a data-social="discord" aria-label="Join us on Discord" class="social-button" title="Discord">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -175,8 +177,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a aria-label="Follow us on LinkedIn" class="social-button" href="https://linkedin.com"
-                        title="LinkedIn">
+
+                    <a data-social="linkedin" aria-label="Follow us on LinkedIn" class="social-button" title="LinkedIn">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -190,20 +192,44 @@
     </header>
     <main id="main-content" tabindex="-1">
         <section aria-labelledby="page-title" class="section hero" id="top">
-         <!--   <p class="eyebrow">Team</p> -->
+            <!--   <p class="eyebrow">Team</p> -->
             <h1 id="page-title">Team</h1>
             <p class="placeholder">Un team early stage ma con una visione condivisa <br>
 
- 
 
-Unia Games è un progetto startup in fase di costruzione e preparazione alla costituzione societaria. Oggi il progetto riunisce 13 persone tra core team e collaboratori. </p>
+
+                Unia Games è un progetto startup in fase di costruzione e preparazione alla costituzione societaria.
+                Oggi il progetto riunisce 13 persone tra core team e collaboratori. </p>
             <div aria-label="Main actions" class="hero-actions">
             </div>
         </section>
         <section aria-labelledby="content-title" class="section">
             <h2 id="content-title">Incontra il Team</h2>
             <p class="placeholder">Content placeholder.</p>
+            <div aria-label="Site sections" class="grid">
+                <article class="card">
+                    <h3><a href="mission-it.html">Missione</a></h3>
+                    <p>Scopri la nostra missione e i nostri valori.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="project-it.html">Progetti</a></h3>
+                    <p>Scopri il progetto che stiamo costruendo.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="accessibility-it.html">Accessibilità</a></h3>
+                    <p>Scopri come progettiamo per i giocatori ipovedenti e con disabilità visive.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="team-it.html">Team</a></h3>
+                    <p>Incontra le persone dietro Unia Games.</p>
+                </article>
+                <article class="card">
+                    <h3><a href="contact-it.html">Contatto</a></h3>
+                    <p>trova il canale di contatto giusto per la tua richiesta.</p>
+                </article>
+            </div>
         </section>
+
     </main>
     <footer class="site-footer">
         <div class="footer-inner">
@@ -213,11 +239,20 @@ Unia Games è un progetto startup in fase di costruzione e preparazione alla cos
                     Tutti i diritti riservati.</p>
                 <nav aria-label="Navigazione footer" class="footer-links">
                     <a href="accessibility/index.html">Statuto di accessibilità</a>
+                    <a href="privacy-it.html">Privacy</a>
                     <a href="../index.html" hreflang="it" lang="it">Inglese</a>
                 </nav>
             </div>
         </div>
     </footer>
+    <script src="../js/links.js"></script>
+    <script>
+        document.querySelectorAll('[data-social="instagram"]').forEach(el => el.href = SOCIAL_LINKS.instagram);
+        document.querySelectorAll('[data-social="facebook"]').forEach(el => el.href = SOCIAL_LINKS.facebook);
+        document.querySelectorAll('[data-social="discord"]').forEach(el => el.href = SOCIAL_LINKS.discord);
+        document.querySelectorAll('[data-social="linkedin"]').forEach(el => el.href = SOCIAL_LINKS.linkedin);
+    </script>
+
 </body>
 
 </html>
