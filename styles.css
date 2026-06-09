@@ -563,6 +563,19 @@ body.light-theme .social-list li {
   overflow-wrap: break-word;
 }
 
+.card .description {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  line-height: 1.0;
+  font-family: "Leggibilmente", sans-serif;
+  font-weight: 400;
+
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
 .card c {
   margin-bottom: 0;
   color: var(--muted);
@@ -852,9 +865,19 @@ body.light-theme .social-button:hover {
 }
 
 /* default: tema scuro */
-.logo-dark  { display: none; }
-.logo-light { display: block; }
+.logo-dark {
+  display: none;
+}
+
+.logo-light {
+  display: block;
+}
 
 /* tema chiaro */
-body.light-theme .logo-dark  { display: block; }
-body.light-theme .logo-light { display: none; }
+body.light-theme .logo-dark {
+  display: block;
+}
+
+body.light-theme .logo-light {
+  display: none;
+}
